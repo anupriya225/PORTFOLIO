@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('certifications')">Certifications</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section with FULL background -->
+  <section id="home" class="section active">
+    <div class="section-content home-content">
+      <div class="text">
+        <h1>Hi, I'm <span class="highlight">PEMMA ANU PRIYA</span></h1>
+        <h1>A passionate Web Developer creating modern and responsive websites</h1>
+<center>
+        <a href="mailto:pemmaanupriya1729@gmail.com" class="btn">Get in Touch</a>
+</center>      
+</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-content">
+      <div class="text">
+        <h2>About Me</h2>
+        <p>I am a dedicated and detail-oriented developer in building web applications using modern technologies. I enjoy solving problems and continuously learning new skills to improve my craft.</p>
+      </div>
+      <div class="image">
+        <img src="img/portfoliobg2.png" alt="About Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <center>
+      <h2>PROJECTS</h2>
+    </center><br>
+    <div class="grid">
+      <div class="card">
+        <h3>PROJECT 1 <br> MEDI MEET</h3><br>
+        <p>(ONLINE APPOINTMENT BOOKING TO CONSULT A DOCTOR AT PARTICULAR TIME OF SLOT)</p>
+      </div>
+      <div class="card">
+        <h3>PROJECT 2 <br> MICROPROJECT</h3><br>
+        <p>SOLVING THE PROBLEMS USING C PROGRAMMING LANGUAGE</p>
+      </div>
+      <div class="card">
+        <h3>PROJECT 3</h3><br>
+        <p>Description of your project goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+<center>
+    <h2>Certifications</h2>
+    <p>Here are my achievements and certifications:</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Python Programming</h3>
+        <a href="#" class="btn" onclick="openModal('pythonModal')">View Certificates</a>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <a href="#" class="btn" onclick="openModal('webModal')">View Certificates</a>
+      </div>
+      <div class="card">
+        <h3>Database Management</h3>
+        <a href="#" class="btn" onclick="openModal('dbmsModal')">View Certificates</a>
+      </div>
+    </div>
+</center>
+  </section>
+
+  <!-- Modals (Python, Web, DBMS Certificates) -->
+  <!-- Keep all your previous modal code here without changes -->
+<!-- Python Certificates Modal -->
+<div id="pythonModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('pythonModal')">&times;</span>
+    <h3>Python Programming Certificates</h3>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\WhatsApp Image 2025-09-03 at 17.50.41_74a30b73.jpg" alt="Python Certificate 1" style="width:100%; max-width:600px; margin-bottom:10px;"><br></br><hr><hr>
+<br></br>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\WhatsApp Image 2025-09-03 at 17.54.02_28da139d.jpg" alt="Python Certificate 2" style="width:100%; max-width:600px;"><br></br><hr><hr>
+<br></br>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\py2.jpg" alt="Python Certificate 2" style="width:100%; max-width:600px;">
+
+  </div>
+</div>
+
+<!-- Web Development Certificates Modal -->
+<div id="webModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('webModal')">&times;</span>
+    <h3>Web Development Certificates</h3>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\WhatsApp Image 2025-09-11 at 18.41.29_6c5d21fb.jpg" alt="HTML Certificate" style="width:100%; max-width:600px; margin-bottom:10px;"><br></br><hr><hr>
+<br></br>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\WhatsApp Image 2025-09-11 at 18.41.29_6c5d21fb.jpg" alt="CSS Certificate" style="width:100%; max-width:600px;">
+  </div>
+</div>
+
+<!-- DBMS Certificates Modal -->
+<div id="dbmsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('dbmsModal')">&times;</span>
+    <h3>Database Management Certificates</h3>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\WhatsApp Image 2025-09-03 at 18.14.57_3b6a12e2.jpg" alt="DBMS Certificate" style="width:100%; max-width:600px;"><br></br><hr><hr>
+    <br></br>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\WhatsApp Image 2025-09-03 at 18.14.28_b8479e41.jpg" alt="DBMS Certificate" style="width:100%; max-width:600px;"><br></br><hr><hr>
+    <br></br>
+    <img src="C:\Users\pemma\OneDrive\Desktop\portfolio\img\WhatsApp Image 2025-09-03 at 18.14.57_3b6a12e2.jpg" alt="DBMS Certificate" style="width:100%; max-width:600px;">
+  </div>
+</div>
+</section>
+
+
+<!-- Skills Section -->
+  <section id="skills" class="section">
+    <center>
+      <h2>Skills</h2>
+    </center><br>
+    <div class="skills">
+      <span>PYTHON</span>
+      <span>FRONTEND WITH BOOTSTRAP</span><br></br>
+     <span>MERN STACK</span>
+     <span>ANDROID APPLICATION</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <center>
+      <h2>Contact</h2><br>
+      <p>Feel free to connect with me on social media:</p>
+      <div class="socials">
+        <a href="https://in.linkedin.com/in/anu-priya-pemma-606610349" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your-github-username" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </center>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> PEMMA ANU PRIYA</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function openModal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      document.querySelectorAll('.modal').forEach(modal => {
+        if (event.target === modal) modal.style.display = "none";
+      });
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
